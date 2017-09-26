@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS布局</title>
+
+    <!--
+      - 默认情况下, 所有网页标签都在标准流布局中
+        : 从上到下, 从左到右 (跟这滑动)
+      - 脱离标准流的方法有
+        : float属性 浮动在父标签左边, 或者右边
+        : position属性 和 left, right, top, bottom属性
+
+    -->
+    <style>
+        ul{
+            display: inline-block; // 变成行内块级标签
+            background-color: red;
+        }
+        ul li{
+            /*float: left;*/
+            float: right;
+        }
+
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li>哈哈哈哈哈哈哈哈</li>
+        <li>哈哈哈哈哈哈哈哈</li>
+        <li>哈哈哈哈哈哈哈哈</li>
+        <li>哈哈哈哈哈哈哈哈</li>
+        <li>哈哈哈哈哈哈哈哈</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS中常用的语法</title>
+    <script type="text/javascript">
+
+        // 定义变量可以省略var, 可同行, 不推荐省略和同行
+        var age = 18; var money = 1.09;
+        var name = 'jack';
+            name1 = 'rose';
+        var result = true;
+        var scrore = null;
+
+        // typeof 检测真实类型
+        console.log(age,  money, name, name1, result, scrore);
+        console.log(typeof age, typeof money, typeof name, typeof name1, typeof result, typeof scrore )
+
+        // 字符串拼接
+        var newName = name + ' ' + name1;
+        console.log(newName);
+
+        // 实验:运算是从左往右的, 任何对象遇到String , 就会被转化成String
+        var str1 = 10 + 10 + '10' + '10'; // 201010
+        var str2 = '10' + '10' + 10 + 10; // 10101010
+        var str3 = ('10' + 10) + '10' + 10; // 10101010
+        console.log(str1, str2, str3);
+
+        // 数组, 数组里可以存放任何内容, 可以不同类型
+        var newArr= [10, -5, age,  name, result, scrore, ['', 111]];
+        // 数组类型 是 object
+        console.log(typeof  newArr);
+
+        // 输出数组内容
+        for(var i = 0; i < newArr.length; i++) {
+            console.log(newArr[i]);
+        }
+        // for in 遍历 和 OC中的遍历还是有差别的
+        for(var i in newArr) {
+            console.log(i, newArr[i]);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

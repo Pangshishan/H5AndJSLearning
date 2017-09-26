@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+
+    <style>
+        /*标签选择器*/
+        div {
+            color: red;
+        }
+        p {
+            color: green;
+        }
+
+        /*类选择器*/
+        .test1 {
+            color: black;
+        }
+
+        /*id选择器*/
+        #first {
+            font-size: 30px;
+        }
+
+        /*并列选择器 相当于逻辑或, 逗号表示或者*/
+        p , #first {
+            border: 1px #ffd1f5 dashed;
+        }
+
+        /*复合选择器 相当于逻辑与, 中间啥也不写(空格都不能有)*/
+        div.test1 {
+            border: 2px red solid;
+        }
+
+        /*后代选择器*/
+        div .test3 a {
+            font-size: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="first">11111111111111111111</div>
+    <div>11111111111111111111</div>
+    <div>11111111111111111111</div>
+    <div class="test1">11111111111111111111</div>
+
+    <p class="test1">22222222222222222222222222</p>
+    <p>22222222222222222222222222</p>
+    <p>22222222222222222222222222</p>
+    <p>22222222222222222222222222</p>
+
+    <div id="test2">
+        <p class="test3">我是段落
+            <a href="#">我是特别大的超级链接</a>
+        </p>
+
+    </div>
+</body>
+</html>

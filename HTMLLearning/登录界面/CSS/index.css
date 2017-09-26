@@ -1,0 +1,140 @@
+* {
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+/*面板*/
+#panel{
+    display: inline-block;
+    margin-top: 50px;
+    background-color: white;
+    border: 1px #dddddd solid;
+    padding: 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    /*阴影: 水平 竖直 模糊x像素 颜色*/
+    box-shadow: 0px 0px 10px #999;
+    width: 300px;
+}
+
+/*面板头部*/
+#panel .panel-header{
+    font-size: 13px;
+    font-family: Arial;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0px;
+    width: 150px;
+    margin: 0px auto;
+}
+
+/*面板中间*/
+#panel .pannel-content{
+    margin-top: 20px;
+}
+
+#panel .pannel-content .input{
+    margin-bottom: 9px;
+    position: relative;
+    height: 36px;
+}
+
+#panel .pannel-content label{
+    position: absolute;
+    top: 7px;
+    left: 6px;
+}
+
+#panel .pannel-content .input input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dddddd;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+#panel .pannel-content input:focus{
+    outline: none;
+    border: 1px solid orange;
+    box-shadow: 0px 0px 2px orange;
+}
+
+#panel .pannel-content .pwd-login{
+    position: relative;
+    margin-right: 0px;
+    height:20px;
+    line-height: 20px;
+}
+#panel .pannel-content .pwd-login input{
+    float: left;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+}
+#panel .pannel-content .pwd-login a{
+    /*display: inline-block;*/
+    color: gray;
+    font-size: 13px;
+    width: auto;
+    text-decoration: none;
+}
+/*下次自动登录*/
+#panel .pannel-content .pwd-login .pwd-login-left{
+    position: absolute;
+    margin-left: 5px;
+    left: 12px;
+    width: auto;
+}
+#panel .pannel-content .pwd-login .pwd-login-right{
+    /*浮动在最右边*/
+    float: right;
+}
+
+#panel .login button{
+    width: 100%;
+    height: 33px;
+    border: 0px;
+    color: white;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: orange;
+    outline: none;
+}
+
+#panel .reg{
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    border-bottom: 1px solid #dddddd;
+}
+#panel .reg a {
+    color: orange;
+    /*去掉下划线*/
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+#panel .pannel-footer{
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+}
+#panel .pannel-footer span{
+    /*position: absolute;*/
+    left: 0px;
+    width: auto;
+}
+#panel .pannel-footer img{
+    width: 25px;
+    /*垂直居中*/
+    vertical-align: middle;
+}

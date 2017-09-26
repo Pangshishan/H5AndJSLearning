@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>居中</title>
+
+    <!-- 水平居中
+        行内标签和行内块级标签 在父标签设置居中
+        块级标签设置外边距(margin)左右自动, 则水平居中
+    -->
+
+    <!-- 垂直居中
+        行内标签和行内块级标签 让父标签 line-height == height
+        块级标签: 通过布局
+    -->
+
+    <style>
+        div{
+            background-color: red;
+            width: 400px;
+            height: 250px;
+            line-height: 250px;
+
+            /*水平居中, 设置子标签居中, 要在父标签中设置*/
+            text-align: center;
+
+        }
+        span{
+            background-color: green;
+
+            /*line-height: 250px;*/
+        }
+        p{
+            background-color: gold;
+            width:200px;
+            /*上下0, 左右自动*/
+            margin: 0px auto;
+            text-align: center;
+        }
+        button{
+            width: auto;
+            height: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <!--<span>行内标签</span>-->
+        <button>行内块级标签</button>
+        <!--<p>P块级标签</p>-->
+    </div>
+</body>
+</html>

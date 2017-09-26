@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-选择器的优先级别</title>
+
+    <!--
+    CSS遵循
+    1.相同级别的选择器: a.就近 b.叠加
+    2.优先级
+       important > 行内(内联) > id > 类 > 标签 > 通配符 > 子类标签
+    3.选择器的针对性越强, 他的优先级越高 (权值)
+    -->
+    <style>
+
+        /*important 权值为1000*/
+        /*行内属性大于所有其他属性, 唯独小于important*/
+        div {
+            color : black !important;
+        }
+
+        /*权值为 100 + 1*/
+        div#main {
+            color : burlywood;
+        }
+
+        /*id选择器*/ /*权值:100*/
+        #main {
+            color: black;
+        }
+        #second {
+            color: burlywood;
+        }
+        /*类选择器*/ /*权值:10*/
+        .test1 {
+            color: goldenrod;
+        }
+        .test2 {
+            color: purple;
+        }
+        /*标签选择器*/ /*权值:1*/
+        div/*权值:1*/ {
+            color: red;
+        }
+        div/*权值:1*/ {
+            color: green;
+        }
+
+
+        /*通配符选择器, 最好不要用, 性能很差, 优先级最低*/ /*权值:0*/
+        * {
+            font-size: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!--id只能有一个-->
+<div id="main" class="test1 test2">我是div</div>
+
+</body>
+</html>

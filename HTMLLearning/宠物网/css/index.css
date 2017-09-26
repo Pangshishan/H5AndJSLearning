@@ -1,0 +1,136 @@
+/*导入字体*/
+@font-face {
+    font-family: BebasNeue-webfont;
+    src: url("../fonts/BebasNeue-webfont.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /*只有一个图片*/
+    /*background: url("../images/tw.png") no-repeat;*/
+    background: url("../images/pattern.gif");
+    font-family: BebasNeue-webfont;
+}
+a{
+    text-decoration: none;
+}
+
+/*头部*/
+#header{
+    height: 3px;
+    background-color: red;
+}
+/*导航*/
+#nav{
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+#nav ul{
+    display: inline-block;
+}
+#nav ul li{
+    display: inline-block;
+}
+#nav ul li a{
+    margin: 0 10px;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    font-size: 25px;
+}
+/*鼠标悬停的伪类*/
+#nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+#nav ul li a.selected{
+    background-color: white;
+    color: black;
+}
+
+/*-------中间列表----------*/
+#list{
+    text-align: center;
+    background-color: white;
+}
+
+#list .love{
+    display: inline-block;
+    width: 382px;
+    text-align: left;
+    padding: 20px;
+}
+
+#list .love p{
+    font-family: sans-serif;
+    /* 首行缩进 */
+    text-indent: 30px;
+    margin: 5px 0px;
+}
+
+#list .love a{
+    display: inline-block;
+    background-color: #c0392b;
+    color: white;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+#list .love a:hover{
+    background-color: black;
+}
+
+/* ------------尾部------------*/
+#footer{
+    margin: 20px 0px;
+    text-align: center;
+}
+#footer h2{
+    color: white;
+    margin: 5px;
+}
+
+#footer ul{
+    display: inline-block;
+}
+#footer ul li{
+    display: inline-block;
+}
+#footer ul li a{
+    margin:0 3px;
+}
+#footer ul li a:hover{
+    opacity: 0.7;
+}
+
+
+/*-----------------适配---------------*/
+/*当宽度到864px的时候*/
+@media screen and (max-width: 875px) {
+    #nav ul li a{
+        width: 100px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 626px) {
+    #nav ul li a{
+        width: 60px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 425px) {
+    #nav ul li a{
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0px 5px;
+        font-size: 20px;
+    }
+
+}

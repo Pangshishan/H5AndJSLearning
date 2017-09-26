@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition用法</title>
+    <style>
+        div{
+            margin: 15px;
+        }
+        .transition-test{
+            width: 200px;
+            height: 70px;
+            background-color: red;
+
+
+            -webkit-transition: width 1s;
+            -moz-transition: width 1s;
+            transition: width 1s;
+
+            transition-property: width, height;
+            transition-duration: 0.2s;
+        }
+        .transition-test:hover{
+            width: 300px;
+            height: 150px;
+        }
+
+        .transform-test{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+
+            -webkit-transition: transform 0.5s;
+            -moz-transition: transform 0.5s;
+            transition: transform 0.5s;
+        }
+        .transform-test:hover{
+            transform: scale(2, 2);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="transition-test">哈哈哈</div>
+    <div class="transform-test">旋转动画</div>
+</body>
+</html>
